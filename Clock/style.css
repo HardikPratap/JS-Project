@@ -64,3 +64,23 @@
     text-align: center;
     position: relative;
 }
+
+.clock span::after{
+    
+    font-size: 16px;
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform:translateX(-50%);
+}
+
+#hrs::after{
+    content: 'Hours';
+}
+#min::after{
+    content: 'Min';
+}
+#sec::after{
+    content: 'Sec';
+}
+
