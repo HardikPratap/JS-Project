@@ -29,6 +29,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    /* backdrop-filter: blur(40px);
+     */
+     -webkit-backdrop-filter: blur(40px);
 }
 .container::before{
     content: '';
@@ -39,5 +42,17 @@
     position: absolute;
     left: -50px;
     top: -50px;
+    z-index: -1;
+}
+
+.container::after{
+    content: '';
+    width: 180px;
+    height: 180px;
+    background: #419aff;
+    border-radius: 50%;
+    position: absolute;
+    right: -30px;
+    bottom: -50px;
     z-index: -1;
 }
